@@ -1,0 +1,63 @@
+/* ==============
+    Composition
+================ */
+.container {
+    width: min(100% - 2rem, 60rem);
+    margin-inline: auto;
+}
+
+.container--wide {
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;
+}
+
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-spacer, 1rem);
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+@media (min-width: 50em) {
+    .grid--two-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid--three-columns {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid--four-columns {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid--responsive {
+        grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    }
+}
+
+.text-white { color: var(--neutral-100); }
+.text-light { color: var(--neutral-200); }
+.text-default { color: var(--neutral-400); }
+
+.ff-accent { font-family: var(--ff-accent); }
+.ff-body { font-family: var(--ff-body); }
+
+.clr-primary { color: var(--clr-primary-400); }
+
+.fs-900 { font-size: var(--fs-900); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-300 { font-size: var(--fs-300); }
+
+.fw-900 { font-weight: var(--fw-900); }
+.fw-700 { font-weight: var(--fw-700); }
+.fw-400 { font-weight: var(--fw-400); }

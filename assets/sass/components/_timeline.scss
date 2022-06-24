@@ -1,0 +1,109 @@
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  // line
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    height: 100%;
+    background-color: gray;
+    left: 0;
+  }
+
+  & li {
+    background-color: var(--neutral-800);
+    margin-block: 2rem;
+    padding: 1.5rem;
+    border-radius: .5em;
+    position: relative;
+    width: 90%;
+    transform: translateX(2rem);
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 1rem;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      left: -10px;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent var(--neutral-800) transparent transparent;
+    }
+
+    // circle
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -1.9rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: var(--neutral-800);
+      border: 3px solid var(--clr-primary-400);
+      border-radius: 50%;
+      transform: translate(-50%, 50%);
+    }
+  }
+}
+
+@media (min-width: 50em) {
+  .timeline {
+    width: min(90%, 800px);
+    margin: 5rem auto;
+  }
+
+
+  // line
+  .timeline::before {
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .timeline li {
+    width: 50%;
+    position: relative;
+
+    // circle
+    &:nth-child(odd) {
+      transform: translateX(-2rem);
+
+      &::before {
+        transform: translate(50%, 50%);
+        right: -2rem;
+        left: auto;
+      }
+
+      &::after {
+        right: -10px;
+        left: auto;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent var(--neutral-800);
+
+      }
+    }
+    
+    &:nth-child(even) {
+      margin-left: auto;
+      transform: translateX(2rem);
+
+      &::before {
+        transform: translate(-50%, 50%);
+        left: -2rem;
+        right: auto;
+      }
+
+      &::after {
+        left: -10px;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--neutral-800) transparent transparent;
+      }
+    }
+  }
+}

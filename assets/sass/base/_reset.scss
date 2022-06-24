@@ -1,0 +1,50 @@
+/* ==============
+    Reset
+================ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1, h2, h3, h4,
+p {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+}
+
+input,
+textarea,
+button {
+    font: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a { 
+    text-decoration: none;
+    color: inherit;
+}
+
+p:not([class]) {
+    max-width: 60ch;
+}

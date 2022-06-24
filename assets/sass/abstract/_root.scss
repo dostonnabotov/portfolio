@@ -1,0 +1,34 @@
+@use './mixins' as *;
+
+:root {
+  --clr-primary-200: rgba(105, 171, 236, 0.5);
+
+  --ff-body: 'Open Sans', sans-serif;
+  --ff-accent: 'Roboto Mono', monospace;
+
+  --fw-400: 400;
+  --fw-700: 700;
+  --fw-900: 800;
+
+  /* Dynamic - depends on screen size */
+  --fs-300: 0.8rem;
+  --fs-400: 1rem;
+  --fs-600: 1.125rem;
+  --fs-700: 1.375rem;
+  --fs-900: 2rem;
+  
+  @include md('medium') {
+    --fs-400: 1.125rem;
+    --fs-600: 1.375rem;
+    --fs-700: 2.75rem;
+    --fs-900: 4.125rem;
+    }
+
+    --neutral-900: #0E1525;
+    --neutral-800: #272f41;
+    --neutral-400: #b0b4be;
+    --neutral-200: #e5e6e9;
+    --neutral-100: #fefefe;
+  
+    --clr-primary-400: #149ddd;
+}

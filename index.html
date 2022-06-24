@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header container--wide flex">
+        <div>
+          <a href="index.html">
+            <img src="./assets/images/logo.svg" width="50px" alt="" />
+          </a>
+        </div>
+        <input type="checkbox" name="menu" id="menu" />
+        <label for="menu" class="menu-label">
+          <span class="menu"></span>
+        </label>
+        <nav id="primary-nav" class="primary-nav">
+          <a class="fw-700" href="#about">About</a>
+          <a class="fw-700" href="#edu-and-exp">Edu & Exp</a>
+          <a class="fw-700" href="#projects">Projects</a>
+          <a class="fw-700" href="#contact">Contact</a>
+          <div class="resume">
+            <a class="btn" data-type="outline" href="" target="_blank" rel="noopener noreferrer"
+              >Resume</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main container flow">
+      <section>
+        <p class="ff-accent fs-500 clr-primary">Hi, there! My name is</p>
+        <h1 class="ff-accent fs-900 fw-900 text-white">Doston Nabotov</h1>
+        <p class="fs-900 fw-900 ff-body">I build things for the web</p>
+        <article class="flow" style="margin-top: 2rem; --flow-spacer: 1.5rem">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere non omnis laudantium,
+            maiores alias ad. Adipisci illo eos, optio asperiores ad laudantium. Tempora provident
+            nulla dignissimos aut autem laudantium repellat.
+          </p>
+          <a href="" class="btn fs-600" data-type="outline">Check out my Resume</a>
+        </article>
+      </section>
+
+      <section class="flow" id="about">
+        <h2 class="fs-700 text-light">About me</h2>
+        <div class="grid grid--two-columns">
+          <article class="flow">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus dolorem laudantium dolore quis mollitia ipsum beatae aperiam assumenda iusto nulla!</p>
+            <p>Eligendi quisquam placeat ipsam. Nulla expedita omnis ad quibusdam delectus exercitationem, adipisci dolore laborum repudiandae quam dolor dolorum voluptates aliquid.</p>
+            <p>Here are a few technologies I’ve been working with recently:</p>
+            <ul>
+              <li>JavaScript (ES6+)</li>
+              <li>React</li>
+              <li>Sass</li>
+              <li>Figma</li>
+            </ul>
+          </article>
+          <div>
+            <img src="./assets/images/setup.jpg" alt="set up">
+          </div>
+        </div>
+      </section>
+      <section class="flow" id="edu-and-exp">
+        <h2 class="fs-700 text-light">Education & Experience</h2>
+        <ul class="timeline">
+          <li class="flow">
+            <h3 class="ff-accent">2022, March 5</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure minima voluptas
+              consectetur rerum deserunt expedita odit cupiditate eaque, officia cumque!
+            </p>
+          </li>
+          <li class="flow">
+            <h3 class="ff-accent">2021, January 3</h3>
+            <p>
+              Reiciendis nihil, tenetur quam error incidunt molestiae recusandae neque optio eum
+              accusantium debitis facere aliquam voluptatum libero, atque iure vel!
+            </p>
+          </li>
+          <li class="flow">
+            <h3 class="ff-accent">2020, November 12</h3>
+            <p>
+              Ex nobis incidunt officiis debitis in at adipisci architecto facere molestiae quae
+              excepturi, repellendus officia maiores provident quaerat vel voluptate.
+            </p>
+          </li>
+          <li class="flow">
+            <h3 class="ff-accent">2019 April 10</h3>
+            <p>
+              Nesciunt aspernatur fugiat mollitia quam sunt excepturi maiores dolorem similique
+              ratione aut laborum ad ab, harum alias ex consequatur recusandae?
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="flow" id="projects">
+        <h2 class="fs-700 text-light">Projects</h2>
+        <div class="projects grid grid--responsive">
+          <div class="project flow">
+            <div class="project__img">
+              <a href=""><img src="./assets/images/setup.jpg" alt=""></a>
+            </div>
+            <div class="project__body flow">
+              <h3 class="fs-600 text-light">Personal Portfolio</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, animi!</p>
+            </div>
+            <div class="project__meta flex">
+              <a href=""><i class="fab fa-github"></i> Github</a>
+              <a href=""><i class="fas fa-link"></i> Live Site</a>
+            </div>
+          </div>
+          <div class="project flow">
+            <div class="project__img">
+              <a href=""><img src="./assets/images/setup.jpg" alt=""></a>
+            </div>
+            <div class="project__body flow">
+              <h3 class="fs-600 text-light">Personal Portfolio</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, animi!</p>
+            </div>
+            <div class="project__meta flex">
+              <a href=""><i class="fab fa-github"></i> Github</a>
+              <a href=""><i class="fas fa-link"></i> Live Site</a>
+            </div>
+          </div>
+          <div class="project flow">
+            <div class="project__img">
+              <a href=""><img src="./assets/images/setup.jpg" alt=""></a>
+            </div>
+            <div class="project__body flow">
+              <h3 class="fs-600 text-light">Personal Portfolio</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, animi!</p>
+            </div>
+            <div class="project__meta flex">
+              <a href=""><i class="fab fa-github"></i> Github</a>
+              <a href=""><i class="fas fa-link"></i> Live Site</a>
+            </div>
+          </div>
+          <div class="project flow">
+            <div class="project__img">
+              <a href=""><img src="./assets/images/setup.jpg" alt=""></a>
+            </div>
+            <div class="project__body flow">
+              <h3 class="fs-600 text-light">Personal Portfolio</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, animi!</p>
+            </div>
+            <div class="project__meta flex">
+              <a href=""><i class="fab fa-github"></i> Github</a>
+              <a href=""><i class="fas fa-link"></i> Live Site</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flow" id="contact">
+        <h2 class="fs-700 text-light">Contact</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit rem facere dolorum
+          repellat eius saepe aperiam perferendis sed eos?
+        </p>
+        <p>
+          Itaque cupiditate mollitia ipsa sit assumenda vero, nisi similique consequuntur tempore
+          ipsam. Ipsam aliquid voluptate tenetur ad id ut quo!
+        </p>
+      </section>
+
+      <div class="left-sidebar flex">
+        <a href=""><i class="fab fa-github"></i></a>
+        <a href=""><i class="fab fa-telegram"></i></a>
+        <a href=""><i class="fab fa-codepen"></i></a>
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <div class="line"></div>
+      </div>
+    </main>
+  </body>
+</html>
