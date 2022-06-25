@@ -125,7 +125,25 @@ section {
   transform: translateY(-5px);
 }
 
-@media (min-width: 50rem) {
+footer {
+  margin-block: 3rem;
+}
+
+@media (max-width: 50em) {
+  section {
+    min-height: auto;
+  }
+
+  .left-sidebar {
+    --gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media (min-width: 50em) {
   .left-sidebar {
     flex-direction: column;
     position: fixed;
@@ -249,6 +267,10 @@ section {
 
 .fw-400 {
   font-weight: var(--fw-400);
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* =============  
