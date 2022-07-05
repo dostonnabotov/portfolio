@@ -14,9 +14,7 @@
     border: 1px solid transparent;
     cursor: pointer;
     
-    transition-property: border-color, box-shadow, color;
-    transition-duration: 150ms;
-    transition-timing-function: ease-in-out;
+    transition: 150ms ease-in-out;
 
     /* for link */
     text-decoration: none;
@@ -24,28 +22,27 @@
 }
 
 .btn:active { 
-    opacity: .9; 
+    opacity: .7;
 }
 
-.btn[data-type="primary"] {
-    background-color: var(--clr-primary-400);
-    border-color: var(--clr-primary-400);
-    color: #fff;
-}
+// .btn[data-type="primary"] {
+//     background-color: var(--clr-primary-400);
+//     border-color: var(--clr-primary-400);
+//     color: #fff;
+// }
 
-.btn[data-type="primary"]:is(:hover, :focus) {
-    box-shadow: 0 0 0 0.2rem var(--clr-primary-200);
-}
+// .btn[data-type="primary"]:is(:hover, :focus) {
+//     opacity: .8;
+// }
 
 .btn[data-type="outline"] {
     background-color: transparent;
     border-color: var(--clr-primary-400);
     color: var(--clr-primary-400);
-    box-shadow:inset 0 0 3px 3px var(--clr-primary-200);
+    box-shadow: inset 0 0 3px 3px var(--clr-primary-200);
 }
 
 .btn[data-type="outline"]:is(:hover, :focus) {
-    background-color: transparent;
     box-shadow: none;
-    color: #fff;
+    color: var(--neutral-200);
 }

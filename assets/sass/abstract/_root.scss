@@ -1,8 +1,10 @@
 @use './mixins' as *;
 
 :root {
-  --clr-primary-200: rgba(105, 171, 236, 0.5);
-
+  /* Static - never changes */
+  --clr-primary-200: rgba(202, 227, 238, 0.6);
+  --clr-primary-400: hsl(199, 83%, 47%);
+  
   --ff-body: 'Open Sans', sans-serif;
   --ff-accent: 'Roboto Mono', monospace;
 
@@ -10,7 +12,15 @@
   --fw-700: 700;
   --fw-900: 800;
 
+  --neutral-900: hsl(222, 45%, 10%);
+  --neutral-800: hsl(222, 25%, 20%);
+  --neutral-400: hsl(223, 10%, 72%);
+  --neutral-200: hsl(225, 8%, 91%);
+  --neutral-100: hsl(0, 0%, 100%); 
+
+
   /* Dynamic - depends on screen size */
+  /* https://www.youtube.com/watch?v=ykn4XNDwW7Q */
   --fs-300: 0.8rem;
   --fs-400: 1rem;
   --fs-600: 1.125rem;
@@ -23,12 +33,4 @@
     --fs-700: 2.75rem;
     --fs-900: 4.125rem;
     }
-
-    --neutral-900: #0E1525;
-    --neutral-800: #272f41;
-    --neutral-400: #b0b4be;
-    --neutral-200: #e5e6e9;
-    --neutral-100: #fefefe;
-  
-    --clr-primary-400: #149ddd;
 }

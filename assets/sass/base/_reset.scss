@@ -20,7 +20,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     line-height: 1.1;
 }
 
@@ -43,8 +44,4 @@ img {
 a { 
     text-decoration: none;
     color: inherit;
-}
-
-p:not([class]) {
-    max-width: 60ch;
 }

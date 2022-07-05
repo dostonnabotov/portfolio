@@ -38,6 +38,7 @@
         grid-template-columns: repeat(4, 1fr);
     }
 
+    /* https://www.youtube.com/watch?v=z2kuC7w9emE */
     .grid--responsive {
         grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     }
@@ -62,4 +63,15 @@
 .fw-700 { font-weight: var(--fw-700); }
 .fw-400 { font-weight: var(--fw-400); }
 
-.text-center { text-align: center; }
+p:not([class]) {
+    max-width: 60ch;
+}
+
+.text-center { 
+    text-align: center; 
+
+    & p,
+    p.text-center {
+        margin-inline: auto;
+    }
+}

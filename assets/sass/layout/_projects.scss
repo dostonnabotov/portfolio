@@ -3,13 +3,15 @@
 }
 
 .project {
-  background-color: var(--neutral-800);
-  border-radius: .5em;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
   width: min(100%, 20rem);
   margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  
+  background-color: var(--neutral-800);
+  border-radius: .5em;
+  overflow: hidden;
 
   &__img {
     overflow: hidden;
@@ -19,6 +21,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+
       transition: transform 500ms ease-in-out;
       cursor: pointer;
 
@@ -36,10 +39,10 @@
   &__meta {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
-    flex-grow: 0;
-    font-weight: var(--fw-700);
     font-family: var(--ff-accent);
+    font-weight: var(--fw-700);
+
+    padding: 1.5rem 1rem;
 
     & a:is(:hover, :focus) {
       color: var(--clr-primary-400);

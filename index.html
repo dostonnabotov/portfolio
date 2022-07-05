@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Doston Nabotov" />
+    <meta property="og:description" content="Doston Nabotov is a front-end developer, who builds things for the web and implements design for the sites." />
+    <meta property="og:link" content="https://dostonnabotov.netlify.com" />
     <title>Portfolio</title>
+
+    <link rel="icon" type="image/svg" sizes="32x32" href="./assets/images/logo.svg">
 
     <!-- Font awesome cdn -->
     <link
@@ -23,15 +28,19 @@
       rel="stylesheet"
     />
 
+    <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./index.js" defer></script>
+    
+    <!-- custom js -->
+    <script type="module" src="./index.js" defer></script>
   </head>
   <body>
-    <header>
+    <!-- Header -->
+    <header id="header">
       <div class="header container--wide flex">
         <div>
           <a href="index.html">
-            <img src="./assets/images/logo.svg" width="50px" alt="" />
+            <img src="./assets/images/logo.svg" width="50px" alt="coding brand logo" title="coding..." />
           </a>
         </div>
         <input type="checkbox" name="menu" id="menu" />
@@ -44,27 +53,24 @@
           <a class="fw-700" href="#projects">Projects</a>
           <a class="fw-700" href="#contact">Contact</a>
           <div class="resume">
-            <a
-              class="btn"
-              data-type="outline"
-              href="./assets/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a class="btn" data-type="outline" href="./assets/resume.pdf" target="_blank" rel="noopener noreferrer">
               Resume
             </a>
           </div>
         </nav>
       </div>
     </header>
+    <!-- /Header -->
 
+    <!-- Main -->
     <main class="main container flow">
+      <!-- Introduction -->
       <section>
         <p class="ff-accent fs-500 clr-primary">Hi, there! My name is</p>
         <h1 class="ff-accent fs-900 fw-900 text-white">Doston Nabotov</h1>
         <p class="fs-900 fw-900 ff-body">I build things for the web</p>
         <article class="flow" style="margin-top: 2rem; --flow-spacer: 1.5rem">
-          <div class="flow | fs-500 fw-900 text-light">
+          <div class="flow | fs-500 text-light">
             <p>
               An inquisitive learner with genuine curiosity in technology and a desire to discover the
               new elements of the software.
@@ -74,18 +80,14 @@
               to grasp new concepts quickly as well as become a dependable and valuable team member.
             </p>
           </div>
-          <a
-            class="btn fs-600"
-            data-type="outline"
-            href="./assets/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a class="btn fs-600" data-type="outline" href="./assets/resume.pdf" target="_blank" rel="noopener noreferrer">
             Check out my Resume
           </a>
         </article>
       </section>
+      <!-- /Introduction -->
 
+      <!-- About -->
       <section class="flow" id="about">
         <h2 class="fs-700 text-light">About me</h2>
         <div class="grid grid--two-columns">
@@ -97,7 +99,7 @@
               Working at big tech companies with great-minded people inspires me to become an expert in my field and develop new skills as I move forward
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
-            <ul>
+            <ul role="list" class="grid grid--two-columns">
               <li>JavaScript (ES6+)</li>
               <li>React</li>
               <li>Sass</li>
@@ -109,133 +111,106 @@
           </div>
         </div>
       </section>
+      <!-- /About -->
+
+      <!-- Education & Experience -->
       <section class="flow" id="edu-and-exp">
         <h2 class="fs-700 text-light">Education & Experience</h2>
         <ul class="timeline">
+          
           <li class="flow">
-            <h3 class="ff-accent">2022, March 5</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure minima voluptas
-              consectetur rerum deserunt expedita odit cupiditate eaque, officia cumque!
-            </p>
+            <h3 class="ff-accent clr-primary">Learning Path</h3>
+            <small class="ff-accent">2021 Sep. - Present</small>
+            <h4 class="text-light">Front-end Developer</h4>
+            <ul role="list" class="flow fs-300" style="padding: 0;">
+              <li>After having thorough understanding of HTML, CSS & JavaScript, currenly learning React and NodeJS</li>
+              <li>Completed several honorable projects and trying to dive deeper into the world of software and technology</li>
+            </ul>
           </li>
+
           <li class="flow">
-            <h3 class="ff-accent">2021, January 3</h3>
-            <p>
-              Reiciendis nihil, tenetur quam error incidunt molestiae recusandae neque optio eum
-              accusantium debitis facere aliquam voluptatum libero, atque iure vel!
-            </p>
+            <h3 class="ff-accent clr-primary">Riga Technical University</h3>
+            <small class="ff-accent">2021 Sep. - 2024 Jul.</small>
+            <h4 class="text-light">Bachelor's - Computer Science</h4>
+            <ul role="list" class="flow fs-300" style="padding: 0;">
+              <li>Pursuing Computer Science degree at Riga Technical University in Latvia</li>
+              <li>Learning Data Structures, Algorithms, Computer Networks and Graphics</li>
+            </ul>
           </li>
+          
           <li class="flow">
-            <h3 class="ff-accent">2020, November 12</h3>
-            <p>
-              Ex nobis incidunt officiis debitis in at adipisci architecto facere molestiae quae
-              excepturi, repellendus officia maiores provident quaerat vel voluptate.
-            </p>
-          </li>
-          <li class="flow">
-            <h3 class="ff-accent">2019 April 10</h3>
-            <p>
-              Nesciunt aspernatur fugiat mollitia quam sunt excepturi maiores dolorem similique
-              ratione aut laborum ad ab, harum alias ex consequatur recusandae?
-            </p>
+            <h3 class="ff-accent clr-primary">Progress LTC</h3>
+            <small class="ff-accent">2021 Jun. - 2022 Jan.</small>
+            <h4 class="text-light">Administrative Assistant</h4>
+            <ul role="list" class="flow fs-300" style="padding: 0;">
+              <li>Prepared and administered written, oral, and performance tests, and issued grades in accordance with
+                performance</li>
+              <li>Observed and evaluated students' work to determine progress and made suggestions for improvement</li>
+            </ul>
           </li>
         </ul>
       </section>
+      <!-- /Education & Experience -->
 
+      <!-- Projects -->
       <section class="flow" id="projects">
         <h2 class="fs-700 text-light">Projects</h2>
         <div class="projects grid grid--responsive" data-projects></div>
       </section>
-      <section class="flow" id="contact">
-        <h2 class="fs-700 text-light">Contact</h2>
-        <address class="flow">
-          <i class="fas fa-envelope clr-primary"></i>
-          <a href="mailto:doston.nabotov161@gmail.com"> doston.nabotov161@gmail.com</a>
-          <br>
-          <i class="fas fa-phone clr-primary"></i>
-          <a href="tel:+37128115853"> (+371) 28 11 5853</a>
-          <br>
-          <i class="fas fa-location-dot clr-primary"></i>
-          <span> Riga, Latvia</span>
-        </address>
-      </section>
+      <!-- /Projects -->
 
+      <!-- Contact -->
+      <section class="flow text-center" id="contact" style="--flow-spacer: 2rem;">
+        <h2 class="fs-500 text-primary">What's next?</h2>
+        <h3 class="fs-700 text-light">Get in Touch</h3>
+        <p>Whether you have a question or just want to say hi, my inbox is always open.
+          I’ll try my best to get back to you!
+        </p>
+        <a class="btn fs-600" data-type="outline" href="mailto:doston.nabotov161@gmail.com" target="_blank" rel="noopener noreferrer">
+          Say Hello
+        </a>
+      </section>
+      <!-- /Contact -->
+
+      <!-- Left Sidebar - Social Media -->
       <div class="left-sidebar flex">
-        <a
-          href="https://github.com/dostonnabotov"
-          title="Check out projects on GitHub"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://github.com/dostonnabotov" title="Check out projects on GitHub" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-github"></i>
         </a>
-        <a
-          href="https://t.me/dostonnabotov"
-          title="Contact me via Telegram"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://t.me/dostonnabotov" title="Contact me via Telegram" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-telegram"></i>
         </a>
-        <a
-          href="https://www.linkedin.com/in/dostonnabotov/"
-          title="Find out more about me on Linkedin"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://www.linkedin.com/in/dostonnabotov/" title="Find out more about me on Linkedin" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a
-          href="https://codepen.io/dostonnabotov"
-          title="Follow on Codepen"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://codepen.io/dostonnabotov" title="Follow on Codepen" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-codepen"></i>
         </a>
-        <a
-          href="https://www.freecodecamp.org/dostonnabotov"
-          title="FreeCodeCamp"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://www.freecodecamp.org/dostonnabotov" title="FreeCodeCamp" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-free-code-camp"></i>
         </a>
         <div class="line"></div>
       </div>
+      <!-- /Left Sidebar - Social Media -->
     </main>
+    <!-- /Main -->
 
+    <!-- Footer -->
     <footer class="container flow">
       <p class="text-center">
-        Made with love by
-        <a href="https://github.com/dostonnabotov" target="_blank" rel="noopener noreferrer"
+        Made with <i class="fa-solid fa-heart clr-primary"></i> by
+        <a class="text-white" href="https://github.com/dostonnabotov" target="_blank" rel="noopener noreferrer"
           >Doston Nabotov</a
         >
       </p>
     </footer>
+    <!-- /Footer -->
 
-    <template data-project="template">
-      <div class="project flow">
-        <div class="project__img">
-          <a href="http://" ></a>
-          <a data-project="link" target="_blank" rel="noopener noreferrer">
-            <img data-project="img" />
-          </a>
-        </div>
-        <div class="project__body flow">
-          <h3 class="fs-600 text-light" data-project="title"></h3>
-          <p data-project="info"></p>
-        </div>
-        <div class="project__meta flex">
-          <a data-project="github" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github"></i> Github
-          </a>
-          <a data-project="link" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-link"></i> Live Site
-          </a>
-        </div>
-      </div>
-    </template>
+    <!-- Back to top -->
+    <button type="button" id="backToTop" class="back-to-top" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- /Back to top -->
+
   </body>
 </html>

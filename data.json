@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Social Media Dashboard",
+    "info": "Social Media Dashboard with theme switcher",
+    "github": "https://github.com/dostonnabotov/social-media-dashboard-with-theme-switcher",
+    "link": "https://dostonnabotov.github.io/social-media-dashboard-with-theme-switcher/",
+    "img": "./assets/images/projects/social-media-dashboard.png"
+  },
+  {
+    "title": "Advice Generator App",
+    "info": "Advice Generator App generates advice with help of API",
+    "github": "https://github.com/dostonnabotov/advice-generator-app",
+    "link": "https://dostonnabotov.github.io/advice-generator-app",
+    "img": "./assets/images/projects/advice-generator-app.png"
+  },
+  {
+    "title": "Interactive Pricing Component",
+    "info": "Simple, traffic-based pricing",
+    "github": "https://github.com/dostonnabotov/interactive-pricing-component-main",
+    "link": "https://fm-interactive-pricing-component.netlify.app/",
+    "img": "./assets/images/projects/interactive-pricing-component.png"
+  },
+  {
+    "title": "Social Proof section",
+    "info": "Social Proof section tells how much our customers love our products",
+    "github": "https://github.com/dostonnabotov/social-proof-section-master",
+    "link": "https://dostonnabotov.github.io/social-proof-section-master",
+    "img": "./assets/images/projects/social-proof-section.png"
+  },
+  {
+    "title": "Interactive rating Component",
+    "info": "Tell how we do",
+    "github": "https://github.com/dostonnabotov/interactive-rating-component",
+    "link": "https://dostonnabotov.github.io/interactive-rating-component",
+    "img": "./assets/images/projects/interactive-rating-component.png"
+  },
+  {
+    "title": "Intro Component with Sign Up form",
+    "info": "Claim you free trail",
+    "github": "https://github.com/dostonnabotov/intro-component-with-signup-form",
+    "link": "https://dostonnabotov.github.io/intro-component-with-signup-form/",
+    "img": "./assets/images/projects/intro-component-with-signup-form.png"
+  }
+]

@@ -1,0 +1,46 @@
+.left-sidebar {
+  font-size: var(--fs-600);
+}
+
+.left-sidebar a {
+  transition: transform 200ms linear;
+}
+
+.left-sidebar a:hover {
+  color: var(--neutral-100);
+  transform: translateY(-5px);
+}
+
+@media (max-width: 50em) {
+  .left-sidebar {
+    --gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    width: fit-content;
+  }
+}
+
+@media (min-width: 50em) {
+  .left-sidebar {
+    flex-direction: column;
+    position: fixed;
+    width: fit-content;
+    bottom: 6rem;
+    margin-left: -5rem;
+  }
+
+  .line {
+    position: relative;
+  }
+  
+  .line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 6rem;
+    width: 2px;
+    background-color: #444;
+  }
+}
