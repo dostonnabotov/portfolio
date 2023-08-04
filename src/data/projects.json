@@ -1,0 +1,30 @@
+[
+  {
+    "title": "EasyBank landing page",
+    "image": "/images/projects/easybank-landing-page.jpg",
+    "github_url": "https://github.com/dostonnabotov/fem_easybank-landing-page",
+    "site_url": "https://tech-easybank-landing-page.netlify.app/",
+    "skills": ["Astro", "Sass"]
+  },
+  {
+    "title": "News homepage",
+    "image": "/images/projects/news-homepage.jpg",
+    "github_url": "https://github.com/dostonnabotov/fem_news-homepage",
+    "site_url": "https://technophile-news-homepage.netlify.app/",
+    "skills": ["HTML", "CSS"]
+  },
+  {
+    "title": "Fylo dark theme landing page",
+    "image": "/images/projects/fylo-dark-theme-landing-page.jpg",
+    "github_url": "https://github.com/dostonnabotov/fem_fylo-dark-theme-landing-page",
+    "site_url": "https://technophile-fylo-dark-landing-page.netlify.app/",
+    "skills": ["React", "TypeScript", "CSS"]
+  },
+  {
+    "title": "Art gallery website",
+    "image": "/images/projects/art-gallery-website.jpg",
+    "github_url": "https://github.com/dostonnabotov/fem_art-gallery-website",
+    "site_url": "https://technophile-art-gallery-website.netlify.app/",
+    "skills": ["HTML", "CSS"]
+  }
+]
