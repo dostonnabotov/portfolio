@@ -1,0 +1,16 @@
+---
+import type { PostProps } from "../types";
+
+import { fetchBlogArticles } from "../data";
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Post from "../components/Post.astro";
+
+const blogArticles = await fetchBlogArticles();
+---
+
+<BaseLayout title="Blog | Doston Nabotov">
+  <h1>All articles</h1>
+
+  {blogArticles.map((article: PostProps) => <Post {...article} />)}
+</BaseLayout>

@@ -1,0 +1,27 @@
+---
+import type { ProjectProps } from "../types";
+
+interface Props extends ProjectProps {}
+
+const { title, image, github_url, site_url, skills } = Astro.props;
+---
+
+<div class="project">
+  <div class="project__img-wrapper">
+    <img src={image} alt="Preview" />
+  </div>
+  <div class="project__content">
+    <h3>{title}</h3>
+    <ul class="skills">
+      {skills.map((skill) => <li class="skill">{skill}</li>)}
+    </ul>
+    <div class="flex-group">
+      <a href={github_url} target="_blank" rel="noopener noreferrer">
+        GitHub Repo
+      </a>
+      <a href={site_url} target="_blank" rel="noopener noreferrer">
+        Live Preview
+      </a>
+    </div>
+  </div>
+</div>

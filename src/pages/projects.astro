@@ -1,0 +1,16 @@
+---
+import type { ProjectProps } from "../types";
+
+import { fetchProjects } from "../data";
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Project from "../components/Project.astro";
+
+const projects = fetchProjects();
+---
+
+<BaseLayout title="Projects | Doston Nabotov">
+  <h1>All projects</h1>
+
+  {projects.map((project: ProjectProps) => <Project {...project} />)}
+</BaseLayout>

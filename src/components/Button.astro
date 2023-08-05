@@ -1,0 +1,52 @@
+---
+interface BaseProps {
+  renderAs: "link" | "button";
+  className?: string;
+  variant?: "primary" | "secondary";
+  size?: "sm" | "md" | "lg";
+  [key: string]: any;
+}
+
+interface LinkProps extends BaseProps {
+  renderAs: "link";
+  href: string;
+}
+
+interface ButtonProps extends BaseProps {
+  renderAs: "button";
+}
+
+type Props = LinkProps | ButtonProps;
+
+const {
+  renderAs,
+  href,
+  className,
+  variant = "primary",
+  size = "md",
+  ...rest
+} = Astro.props;
+---
+
+{
+  renderAs === "link" ? (
+    <a
+      href={href}
+      class:list={["button", className]}
+      data-type={variant}
+      data-size={size}
+      {...rest}
+    >
+      <slot />
+    </a>
+  ) : (
+    <button
+      class:list={["button", className]}
+      data-type={variant}
+      data-size={size}
+      {...rest}
+    >
+      <slot />
+    </button>
+  )
+}

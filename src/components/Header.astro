@@ -1,3 +1,22 @@
+---
+import Navigation from "./Navigation.astro";
+---
+
 <header>
-  <p>header</p>
+  <div class="container">
+    <div class="header__inner">
+      <a href="/">Technophile</a>
+      <Navigation />
+      <button
+        id="mobile-nav-toggle"
+        class="mobile-nav-toggle"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+        <i class="open-icon | fas fa-bars"></i>
+        <i class="close-icon | fas fa-times"></i>
+      </button>
+    </div>
+  </div>
 </header>

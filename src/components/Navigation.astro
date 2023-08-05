@@ -1,0 +1,48 @@
+---
+const navigationLinks = [
+  {
+    name: "Home",
+    url: "/",
+  },
+  {
+    name: "About",
+    url: "/about",
+  },
+  {
+    name: "Projects",
+    url: "/projects",
+  },
+  {
+    name: "Blog",
+    url: "/blog",
+  },
+  {
+    name: "Contact",
+    url: "/contact",
+  },
+];
+---
+
+<nav class="primary-nav" id="primary-nav" data-visible="false">
+  <ul>
+    <ul role="list">
+      {
+        navigationLinks.map(({ url, name }) => {
+          const currentPath = Astro.url.pathname;
+
+          return (
+            <li>
+              <a
+                class="nav-link"
+                href={url}
+                aria-current={url === currentPath ? "page" : null}
+              >
+                {name}
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </ul>
+</nav>
