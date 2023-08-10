@@ -1,0 +1,22 @@
+@use "./breakpoints" as *;
+
+// media query
+@mixin mq($key, $width: "min") {
+  $size: map-get($breakpoints, $key);
+
+  @if ($size) {
+    @if $width == "min" {
+      @media (width >= $size) {
+        @content;
+      }
+    } @else if $width == "max" {
+      @media (width < $size) {
+        @content;
+      }
+    } @else {
+      @error "Unknown width value: `#{$width}`";
+    }
+  } @else {
+    @error "`#{$key}` does not exist in the $breakpoints";
+  }
+}

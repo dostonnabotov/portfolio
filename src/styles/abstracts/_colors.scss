@@ -1,0 +1,9 @@
+// global color tokens
+$-clr-white: hsl(0, 0%, 100%);
+
+// colors for variables and utilities
+$colors: (
+  "neutral": (
+    "100": $-clr-white,
+  ),
+);

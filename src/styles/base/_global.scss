@@ -1,11 +1,18 @@
 @use "../abstracts" as *;
 
+:root {
+  --light: hsl(219, 30%, 90%);
+  --dark: hsl(219, 30%, 12%);
+}
+
 html {
-  color-scheme: dark;
+  color-scheme: dark light;
 }
 
 body {
   font-family: system-ui;
-  background-color: #121212;
-  color: #eee;
+  // background-color: #121212;
+  // color: #eee;
+  background-color: var(--dark);
+  color: var(--light);
 }

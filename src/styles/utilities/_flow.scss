@@ -1,0 +1,18 @@
+/* Styles for browsers that support @property */
+@supports (property: --flow-space) {
+  @property --flow-space {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 1em;
+  }
+}
+
+/* Styles for all browsers */
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-space, 1em);
+}
+
+/* equivalent to `inherits: false` */
+.flow {
+  --flow-space: 1em;
+}
