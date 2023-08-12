@@ -1,7 +1,14 @@
 @use "../abstracts" as *;
 
+@each $key, $value in $font-sizes {
+  .fs-#{$key} {
+    font-size: $value;
+  }
+}
+
 .section-title {
   margin-bottom: 1em;
+  text-transform: capitalize;
 
   &::before {
     content: "##";
@@ -26,6 +33,12 @@
 
 .heading-3 {
   font-size: var(--fs-700);
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-100);
+}
+
+.heading-4 {
+  font-size: var(--fs-600);
   font-weight: var(--fw-bold);
   color: var(--clr-neutral-100);
 }

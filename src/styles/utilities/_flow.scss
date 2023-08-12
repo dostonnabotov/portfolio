@@ -12,6 +12,10 @@
   margin-top: var(--flow-space, 1em);
 }
 
+.flow[data-flow-space="xl"] {
+  --flow-space: 4em;
+}
+
 /* equivalent to `inherits: false` */
 // .flow {
 //   --flow-space: 1em;

@@ -2,11 +2,10 @@
 
 .posts {
   display: grid;
-  column-gap: var(--size-4);
-  row-gap: var(--size-8);
+  gap: var(--size-8);
 
   @include mq(md) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
