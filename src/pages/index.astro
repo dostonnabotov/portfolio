@@ -7,16 +7,32 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Project from "../components/Project.astro";
 import Post from "../components/Post.astro";
 
-const blogArticles = (await fetchBlogArticles()).slice(0, 4);
+const blogArticles = (await fetchBlogArticles()).slice(0, 6);
 const projects = fetchProjects().slice(0, 4);
 ---
 
 <BaseLayout title="Doston Nabotov">
-  <h1>Hello World</h1>
+  <div class="container">
+    <h1 class="heading-1">Hello World</h1>
+  </div>
 
-  <h2>Blog</h2>
-  {blogArticles.map((article: PostProps) => <Post {...article} />)}
+  <section class="section">
+    <div class="container flow">
+      <h2 class="section-title | heading-2">Featured Projects</h2>
 
-  <h2>Projects</h2>
-  {projects.map((project: ProjectProps) => <Project {...project} />)}
+      <div class="projects">
+        {projects.map((project: ProjectProps) => <Project {...project} />)}
+      </div>
+    </div>
+  </section>
+
+  <div class="section">
+    <div class="container flow">
+      <h2 class="section-title | heading-2">Latest Articles</h2>
+
+      <div class="posts">
+        {blogArticles.map((article: PostProps) => <Post {...article} />)}
+      </div>
+    </div>
+  </div>
 </BaseLayout>

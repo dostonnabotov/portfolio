@@ -6,21 +6,34 @@ interface Props extends ProjectProps {}
 const { title, image, github_url, site_url, skills } = Astro.props;
 ---
 
-<div class="project">
+<div class="project | flow">
   <div class="project__img-wrapper">
     <img src={image} alt="Preview" />
-  </div>
-  <div class="project__content">
-    <h3>{title}</h3>
-    <ul class="skills">
+    <ul role="list" class="skills">
       {skills.map((skill) => <li class="skill">{skill}</li>)}
     </ul>
-    <div class="flex-group">
-      <a href={github_url} target="_blank" rel="noopener noreferrer">
-        GitHub Repo
+  </div>
+  <div class="project__content | flow">
+    <h3 class="project__title">{title}</h3>
+    <div class="flex-group" data-flex-gap="lg">
+      <a
+        class="project__link"
+        href={github_url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub Repo</span>
       </a>
-      <a href={site_url} target="_blank" rel="noopener noreferrer">
-        Live Preview
+
+      <a
+        class="project__link"
+        href={site_url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-solid fa-link"></i>
+        <span>Live Preview</span>
       </a>
     </div>
   </div>

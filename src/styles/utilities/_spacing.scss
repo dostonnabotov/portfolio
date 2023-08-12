@@ -1,3 +1,7 @@
+.section {
+  padding-block: clamp(var(--size-4), 5vw, var(--size-10));
+}
+
 .mx-auto {
   margin-inline: auto;
 }

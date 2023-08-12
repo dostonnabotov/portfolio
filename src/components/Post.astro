@@ -19,25 +19,30 @@ const {
 } = Astro.props;
 ---
 
-<div class="post">
+<div class="post | flow">
   <div class="post__img-wrapper">
     <img src={cover_image} alt="" class="post__img" />
-  </div>
-  <div class="post__content">
-    <h3>{title}</h3>
-    <p>{description}</p>
-    <p>
-      on <FormattedDate date={new Date(created_at)} />
-      (Updated on <FormattedDate date={new Date(edited_at)} />)
-    </p>
-    <p>Reading time: {reading_time_minutes} minutes</p>
-    <ul>
-      {tag_list.map((tag) => <li>{tag}</li>)}
-    </ul>
-    <div>
-      <p>Comments: {comments_count}</p>
-      <p>Reactions: {public_reactions_count}</p>
+    <div class="post__meta | flex-group">
+      <p>
+        <i class="fa-solid fa-comment"></i>
+        <span>{comments_count}</span>
+      </p>
+      <p>
+        <i class="fa-solid fa-heart"></i>
+        <span>
+          {public_reactions_count}
+        </span>
+      </p>
     </div>
-    <a href={url} target="_blank" rel="noopener noreferrer">Read more</a>
+  </div>
+  <div class="post__content | flow">
+    <h3 class="post__title">{title}</h3>
+    <p class="post__date">
+      on <FormattedDate date={new Date(edited_at)} />
+    </p>
+    <a class="post__link" href={url} target="_blank" rel="noopener noreferrer">
+      <span>Read more</span>
+      <i class="fa-solid fa-arrow-right-long"></i>
+    </a>
   </div>
 </div>

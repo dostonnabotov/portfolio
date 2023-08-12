@@ -8,11 +8,11 @@
 }
 
 /* Styles for all browsers */
-.flow > *:where(:not(:first-child)) {
+.flow > * + * {
   margin-top: var(--flow-space, 1em);
 }
 
 /* equivalent to `inherits: false` */
-.flow {
-  --flow-space: 1em;
-}
+// .flow {
+//   --flow-space: 1em;
+// }

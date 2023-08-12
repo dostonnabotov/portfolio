@@ -20,8 +20,8 @@ picture {
   max-width: 100%;
 }
 
-ul[role="list"],
-ol[role="list"] {
+ul:where([role="list"]),
+ol:where([role="list"]) {
   list-style: none;
   margin: 0;
   padding: 0;
