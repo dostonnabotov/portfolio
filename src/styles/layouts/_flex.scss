@@ -2,9 +2,5 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: var(--flex-group-gap, 0.5rem);
-
-  &[data-flex-gap="lg"] {
-    --flex-group-gap: 1rem;
-  }
+  gap: 0.5rem;
 }

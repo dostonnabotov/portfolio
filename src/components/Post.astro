@@ -1,48 +1,9 @@
 ---
 import type { PostProps } from "../types";
 
-import FormattedDate from "../utils/FormattedDate.astro";
+// import FormattedDate from "../utils/FormattedDate.astro";
 
 interface Props extends PostProps {}
 
-const {
-  title,
-  description,
-  url,
-  tag_list,
-  cover_image,
-  reading_time_minutes,
-  created_at,
-  edited_at,
-  comments_count,
-  public_reactions_count,
-} = Astro.props;
+const { title, url, cover_image, created_at, edited_at } = Astro.props;
 ---
-
-<div class="post | flow">
-  <div class="post__img-wrapper">
-    <img src={cover_image} alt="" class="post__img" />
-    <div class="post__meta | flex-group">
-      <p>
-        <i class="fa-solid fa-comment"></i>
-        <span>{comments_count}</span>
-      </p>
-      <p>
-        <i class="fa-solid fa-heart"></i>
-        <span>
-          {public_reactions_count}
-        </span>
-      </p>
-    </div>
-  </div>
-  <div class="post__content | flow">
-    <h3 class="post__title">{title}</h3>
-    <p class="post__date">
-      on <FormattedDate date={new Date(edited_at)} />
-    </p>
-    <a class="post__link" href={url} target="_blank" rel="noopener noreferrer">
-      <span>Read more</span>
-      <i class="fa-solid fa-arrow-right-long"></i>
-    </a>
-  </div>
-</div>
