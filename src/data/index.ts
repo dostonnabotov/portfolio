@@ -9,6 +9,6 @@ export async function fetchBlogArticles(): Promise<PostProps[]> {
   return data as PostProps[];
 }
 
-export function fetchProjects(): ProjectProps[] {
-  return projects;
+export function fetchProjects(limit?: number): ProjectProps[] {
+  return limit ? projects.slice(0, limit) : projects;
 }

@@ -28,3 +28,10 @@
   -webkit-line-clamp: $number;
   overflow: hidden;
 }
+
+// flow
+@mixin flow($space: 1em) {
+  & > * + * {
+    margin-top: $space;
+  }
+}

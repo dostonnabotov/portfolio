@@ -1,12 +1,12 @@
 ---
 import Navigation from "./Navigation.astro";
+import BrandLogo from "./BrandLogo.astro";
 ---
 
-<header>
+<header class="header">
   <div class="container">
     <div class="header__inner">
-      <a href="/">Technophile</a>
-      <Navigation />
+      <BrandLogo />
       <button
         id="mobile-nav-toggle"
         class="mobile-nav-toggle"
@@ -17,6 +17,7 @@ import Navigation from "./Navigation.astro";
         <i class="open-icon | fas fa-bars"></i>
         <i class="close-icon | fas fa-times"></i>
       </button>
+      <Navigation />
     </div>
   </div>
 </header>

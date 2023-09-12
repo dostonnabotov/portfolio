@@ -1,10 +1,8 @@
 @use "../abstracts" as *;
 
 :root {
-  @each $type, $keys in $colors {
-    @each $key, $value in $keys {
-      --clr-#{$type}-#{$key}: #{$value};
-    }
+  @each $key, $value in $colors {
+    --clr-#{$key}: #{$value};
   }
 
   @each $key, $value in $font-families {

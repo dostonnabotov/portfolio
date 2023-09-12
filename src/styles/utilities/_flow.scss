@@ -1,22 +1,14 @@
-/* Styles for browsers that support @property */
-@supports (property: --flow-space) {
-  @property --flow-space {
-    syntax: "<length>";
-    inherits: false;
-    initial-value: 1em;
+@use "../abstracts" as *;
+
+.grid-flow {
+  display: grid;
+  gap: 1rem;
+}
+
+.flow {
+  @include flow();
+
+  &[data-flow-space="lg"] {
+    @include flow(2rem);
   }
 }
-
-/* Styles for all browsers */
-.flow > * + * {
-  margin-top: var(--flow-space, 1em);
-}
-
-.flow[data-flow-space="xl"] {
-  --flow-space: 4em;
-}
-
-/* equivalent to `inherits: false` */
-// .flow {
-//   --flow-space: 1em;
-// }

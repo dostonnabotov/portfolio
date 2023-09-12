@@ -1,1 +1,67 @@
 @use "../abstracts" as *;
+
+.projects {
+  display: grid;
+  gap: clamp(1rem, 4vw, 2rem);
+  grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+
+  @include mq("md") {
+    // staircase-like grid layout
+    & li:nth-of-type(2) {
+      margin-top: 4rem;
+    }
+
+    & li:nth-of-type(2n + 3) {
+      margin-top: -4rem;
+    }
+  }
+}
+
+.project {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.project__img-wrapper {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-color: rgb(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 300ms ease;
+  }
+
+  &:is(:hover, :focus-within)::before {
+    opacity: 1;
+  }
+}
+
+.project__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project__meta {
+  z-index: 2;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  opacity: 0;
+  transition: opacity 300ms ease;
+
+  .project__img-wrapper:is(:hover, :focus-within) & {
+    opacity: 1;
+  }
+}

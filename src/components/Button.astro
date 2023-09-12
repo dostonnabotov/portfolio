@@ -18,34 +18,16 @@ interface ButtonProps extends BaseProps {
 
 type Props = LinkProps | ButtonProps;
 
-const {
-  renderAs,
-  href,
-  className,
-  variant = "primary",
-  size = "md",
-  ...rest
-} = Astro.props;
+const { renderAs, href, className, ...rest } = Astro.props;
 ---
 
 {
   renderAs === "link" ? (
-    <a
-      href={href}
-      class:list={["button", className]}
-      data-type={variant}
-      data-size={size}
-      {...rest}
-    >
+    <a href={href} class:list={["button", className]} {...rest}>
       <slot />
     </a>
   ) : (
-    <button
-      class:list={["button", className]}
-      data-type={variant}
-      data-size={size}
-      {...rest}
-    >
+    <button class:list={["button", className]} {...rest}>
       <slot />
     </button>
   )

@@ -1,0 +1,46 @@
+---
+import BrandLogo from "./BrandLogo.astro";
+import Button from "./Button.astro";
+import Social from "./Social.astro";
+---
+
+<footer>
+  <div class="container">
+    <div>
+      <div>
+        <BrandLogo />
+        <Social />
+      </div>
+
+      <div>
+        <nav>
+          <ul role="list">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Feed</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <Button renderAs="link" href="#" data-variant="primary">
+          <span>Download CV</span>
+          <i class="fa-solid fa-download"></i>
+        </Button>
+      </div>
+    </div>
+
+    <hr />
+
+    <p>© Copyright 2023 - Doston Nabotov</p>
+  </div>
+</footer>

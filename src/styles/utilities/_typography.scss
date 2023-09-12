@@ -5,3 +5,55 @@
     font-size: $value;
   }
 }
+
+.site-title {
+  font-size: 6rem;
+  font-weight: var(--fw-black);
+  line-height: 1.1;
+
+  & span {
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: 0.1125rem;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+}
+
+.heading-3 {
+  font-size: 2rem;
+  font-weight: var(--fw-black);
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  max-width: 40ch;
+}
+
+.section-title {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: var(--fw-black);
+  line-height: 1.1;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 20px;
+    background-image: url("/public/images/pattern-04.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.highlight {
+  background: var(--clr-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}

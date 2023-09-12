@@ -1,0 +1,35 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  gap: 0.5em;
+
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+
+  padding: 1em 2em;
+
+  border-radius: 0.4em;
+
+  // variants
+  &[data-variant="primary"] {
+    background-color: var(--clr-primary);
+    color: var(--clr-text);
+  }
+
+  &[data-variant="secondary"] {
+    background-color: var(--clr-secondary);
+    color: var(--clr-text);
+  }
+
+  // sizes
+  &[data-size="sm"] {
+    font-size: 0.875rem;
+  }
+
+  &[data-size="lg"] {
+    font-size: 1.125rem;
+  }
+}

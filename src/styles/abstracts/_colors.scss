@@ -3,15 +3,12 @@ $-clr-white: hsl(0, 0%, 100%);
 
 // colors for variables and utilities
 $colors: (
-  "neutral": (
-    "100": $-clr-white,
-    "200": hsl(219, 30%, 95%),
-    "300": hsl(219, 30%, 90%),
-    "400": hsl(219, 30%, 80%),
-    "500": hsl(219, 30%, 60%),
-    "600": hsl(219, 30%, 40%),
-    "700": hsl(219, 30%, 25%),
-    "800": hsl(219, 30%, 15%),
-    "900": hsl(219, 30%, 12%),
-  ),
+  "text": hsl(198, 100%, 98%),
+  "background": hsl(195, 40%, 2%),
+  "primary": hsl(225, 86%, 42%),
+  "secondary": hsl(223, 23%, 6%),
+  "accent": hsl(15, 83%, 55%),
+  "gradient": linear-gradient(120deg, var(--clr-primary), var(--clr-accent)),
 );
+
+/// @see https://realtimecolors.com/?colors=f5fcff-030607-0f3dc7-0c0e13-eb5d2d

@@ -1,48 +1,25 @@
 ---
-const navigationLinks = [
-  {
-    name: "Home",
-    url: "/",
-  },
-  {
-    name: "About",
-    url: "#about",
-  },
-  {
-    name: "Projects",
-    url: "#projects",
-  },
-  {
-    name: "Blog",
-    url: "#blog",
-  },
-  {
-    name: "Contact",
-    url: "#contact",
-  },
-];
+import Button from "./Button.astro";
 ---
 
 <nav class="primary-nav" id="primary-nav" data-visible="false">
-  <ul>
-    <ul role="list">
-      {
-        navigationLinks.map(({ url, name }) => {
-          const currentPath = Astro.url.pathname;
-
-          return (
-            <li>
-              <a
-                class="nav-link"
-                href={url}
-                aria-current={url === currentPath ? "page" : null}
-              >
-                {name}
-              </a>
-            </li>
-          );
-        })
-      }
-    </ul>
+  <ul role="list">
+    <li>
+      <a class="nav-link" href="#" aria-current="page">Home</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#">About</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#">Projects</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#">Feed</a>
+    </li>
+    <li>
+      <Button renderAs="link" href="#" class="nav-link" data-variant="primary">
+        Contact
+      </Button>
+    </li>
   </ul>
 </nav>
