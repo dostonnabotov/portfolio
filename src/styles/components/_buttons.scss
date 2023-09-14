@@ -1,5 +1,11 @@
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
 .button {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   gap: 0.5em;
 

@@ -5,3 +5,8 @@
 
   @include flow(clamp(2rem, 8vw, 3rem));
 }
+
+.x-center {
+  width: fit-content;
+  margin-inline: auto;
+}

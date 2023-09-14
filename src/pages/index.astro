@@ -85,7 +85,13 @@ const projects = fetchProjects(4);
         {projects.map((project: ProjectProps) => <Project {...project} />)}
       </ul>
 
-      <Button renderAs="link" href="#" data-variant="primary" data-size="lg">
+      <Button
+        renderAs="link"
+        href="#"
+        data-variant="primary"
+        data-size="lg"
+        className="x-center"
+      >
         View All
       </Button>
     </section>
@@ -135,10 +141,13 @@ const projects = fetchProjects(4);
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section--contact">
       <h2 class="section-title">Contact</h2>
 
-      <p>Feel free to reach out to me at dostonnabotov@gmail.com</p>
+      <p class="lead">
+        Feel free to reach out to me at
+        <b class="highlight">dostonnabotov@gmail.com</b>
+      </p>
 
       <Button renderAs="link" href="#" data-variant="primary">
         Get in Touch
