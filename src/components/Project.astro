@@ -12,18 +12,30 @@ const { title, image, github_url, site_url, skills } = Astro.props;
     <div class="project__img-wrapper">
       <img class="project__img" src={image} alt="Preview" />
       <div class="project__meta">
-        <Button renderAs="link" href={site_url} data-variant="primary">
+        <Button
+          renderAs="link"
+          href={site_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-variant="primary"
+        >
           <span>Live Preview</span>
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </Button>
-        <Button renderAs="link" href={github_url} data-variant="secondary">
+        <Button
+          renderAs="link"
+          href={github_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-variant="secondary"
+        >
           <span>Source Code</span>
           <i class="fa-solid fa-code"></i>
         </Button>
       </div>
     </div>
     <div>
-      <h3 class="heading-3">{title}</h3>
+      <h3 class="project__title">{title}</h3>
     </div>
   </div>
 </li>

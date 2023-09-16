@@ -15,6 +15,11 @@ body {
 ::selection {
   background: var(--clr-accent);
   color: var(--text);
+
+  /** for gradient text
+   + @see https://stackoverflow.com/questions/66012103/how-to-add-custom-selection-to-gradient-text
+   */
+  -webkit-text-fill-color: #fff;
 }
 
 :where(p, li, blockquote):not([class]) {
@@ -23,8 +28,16 @@ body {
 
 a {
   color: inherit;
+  text-underline-offset: 0.2em;
 }
 
 b {
   font-weight: var(--fw-bold);
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  height: 2px;
+  background-image: var(--clr-gradient);
 }

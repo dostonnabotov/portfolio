@@ -1,1 +1,36 @@
+@use "../abstracts" as *;
 
+.footer {
+  padding-block: 2rem;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  justify-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer__nav {
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(1.5rem, 4vw, 3rem);
+  }
+
+  & a {
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}

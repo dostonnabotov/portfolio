@@ -78,4 +78,9 @@
 
 .nav-link {
   text-decoration: none;
+
+  &[aria-current="page"] {
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+  }
 }

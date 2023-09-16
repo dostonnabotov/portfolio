@@ -10,7 +10,13 @@ const projects = fetchProjects();
 ---
 
 <BaseLayout title="Projects | Doston Nabotov">
-  <h1>All projects</h1>
+  <main class="container">
+    <section class="section">
+      <h1 class="section-title">All projects</h1>
 
-  {projects.map((project: ProjectProps) => <Project {...project} />)}
+      <ul role="list" class="projects">
+        {projects.map((project: ProjectProps) => <Project {...project} />)}
+      </ul>
+    </section>
+  </main>
 </BaseLayout>

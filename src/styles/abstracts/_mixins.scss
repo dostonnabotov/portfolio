@@ -30,7 +30,7 @@
 }
 
 // flow
-@mixin flow($space: 1em) {
+@mixin flow($space: 1rem) {
   & > * + * {
     margin-top: $space;
   }

@@ -5,21 +5,22 @@ import Button from "./Button.astro";
 <nav class="primary-nav" id="primary-nav" data-visible="false">
   <ul role="list">
     <li>
-      <a class="nav-link" href="#" aria-current="page">Home</a>
+      <a class="nav-link" href="/" aria-current="page">Home</a>
     </li>
     <li>
       <a class="nav-link" href="#">About</a>
     </li>
     <li>
-      <a class="nav-link" href="#">Projects</a>
+      <a class="nav-link" href="/projects">Projects</a>
     </li>
     <li>
       <a class="nav-link" href="#">Feed</a>
     </li>
     <li>
-      <Button renderAs="link" href="#" class="nav-link" data-variant="primary">
+      <a class="nav-link" href="#contact">Contact</a>
+      <!-- <Button renderAs="link" href="#" class="nav-link" data-variant="primary">
         Contact
-      </Button>
+      </Button> -->
     </li>
   </ul>
 </nav>
