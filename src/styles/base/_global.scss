@@ -29,6 +29,10 @@ body {
 a {
   color: inherit;
   text-underline-offset: 0.2em;
+
+  &:is(:hover, :focus) {
+    color: var(--clr-accent);
+  }
 }
 
 b {

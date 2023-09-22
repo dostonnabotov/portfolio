@@ -45,12 +45,17 @@
   &:is(:hover, :focus-within)::before {
     opacity: 1;
   }
+
+  &:is(:hover, :focus-within) .project__img {
+    scale: 1.05;
+  }
 }
 
 .project__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: scale 300ms ease;
 }
 
 .project__meta {

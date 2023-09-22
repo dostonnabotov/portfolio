@@ -79,8 +79,11 @@
 .nav-link {
   text-decoration: none;
 
-  &[aria-current="page"] {
+  &:is(:hover, :focus) {
     color: var(--clr-accent);
-    font-weight: var(--fw-bold);
   }
+
+  // &[aria-current="page"] {
+  //   font-weight: var(--fw-black);
+  // }
 }
