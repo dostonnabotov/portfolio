@@ -54,22 +54,22 @@
     content: "";
     width: 100%;
     height: 20px;
-    background-image: url("/images/pattern-04.svg");
+    background-image: url("/images/patterns/pattern-04.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &[data-pattern="1"]::after {
-    background-image: url("/images/pattern-01.svg");
+    background-image: url("/images/patterns/pattern-01.svg");
   }
   &[data-pattern="2"]::after {
-    background-image: url("/images/pattern-02.svg");
+    background-image: url("/images/patterns/pattern-02.svg");
   }
   &[data-pattern="3"]::after {
-    background-image: url("/images/pattern-03.svg");
+    background-image: url("/images/patterns/pattern-03.svg");
   }
   &[data-pattern="4"]::after {
-    background-image: url("/images/pattern-04.svg");
+    background-image: url("/images/patterns/pattern-04.svg");
   }
 }
 
