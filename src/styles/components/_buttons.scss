@@ -1,5 +1,6 @@
 .button-group {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: clamp(1rem, 2vw, 1.5rem);
 }
@@ -18,10 +19,10 @@
   padding: 1em 2em;
 
   border-radius: 0.4em;
-  transition: transform 300ms ease;
+  transition: transform 200ms ease, filter 200ms ease;
 
   &:is(:hover, :focus-visible) {
-    transform: translateY(-0.2em);
+    transform: translateY(-0.25em);
   }
 
   // variants
@@ -30,13 +31,18 @@
     color: var(--clr-text);
 
     &:is(:hover, :focus-visible) {
-      box-shadow: 0 0.2em 2em 0.5em hsl(225, 86%, 42%, 0.7);
+      filter: brightness(70%);
+      // box-shadow: 0 0.2em 2em -0.25em hsl(225, 86%, 42%, 0.7);
     }
   }
 
   &[data-variant="secondary"] {
     background-color: var(--clr-secondary);
     color: var(--clr-text);
+
+    &:is(:hover, :focus-visible) {
+      filter: brightness(70%);
+    }
   }
 
   // sizes
