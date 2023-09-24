@@ -1,7 +1,7 @@
 ---
 import BrandLogo from "./BrandLogo.astro";
-import Button from "./Button.astro";
 import Social from "./Social.astro";
+import { navLinks } from "./Navigation.astro";
 ---
 
 <footer class="footer">
@@ -11,33 +11,15 @@ import Social from "./Social.astro";
 
       <nav class="footer__nav">
         <ul role="list">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">Feed</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
+          {
+            navLinks.map(({ name, url }) => (
+              <li>
+                <a href={url}>{name}</a>
+              </li>
+            ))
+          }
         </ul>
       </nav>
-
-      <!-- <Button
-        renderAs="link"
-        href="#"
-        className="footer__cta"
-        data-variant="primary"
-      >
-        <span>Download CV</span>
-        <i class="fa-solid fa-download"></i>
-      </Button> -->
     </div>
 
     <hr />

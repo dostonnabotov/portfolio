@@ -1,23 +1,38 @@
 ---
-import Button from "./Button.astro";
+export const navLinks = [
+  {
+    name: "Home",
+    url: "/",
+  },
+  {
+    name: "About",
+    url: "#about",
+  },
+  {
+    name: "Projects",
+    url: "/projects",
+  },
+  {
+    name: "Feed",
+    url: "#feed",
+  },
+  {
+    name: "Contact",
+    url: "#contact",
+  },
+];
 ---
 
 <nav class="primary-nav" id="primary-nav" data-visible="false">
   <ul role="list">
-    <li>
-      <a class="nav-link" href="/" aria-current="page">Home</a>
-    </li>
-    <li>
-      <a class="nav-link" href="#about">About</a>
-    </li>
-    <li>
-      <a class="nav-link" href="/projects">Projects</a>
-    </li>
-    <li>
-      <a class="nav-link" href="#feed">Feed</a>
-    </li>
-    <li>
-      <a class="nav-link" href="#contact">Contact</a>
-    </li>
+    {
+      navLinks.map(({ name, url }) => (
+        <li>
+          <a class="nav-link" href={url}>
+            {name}
+          </a>
+        </li>
+      ))
+    }
   </ul>
 </nav>
