@@ -1,9 +1,13 @@
 @use "../abstracts" as *;
 
 .section {
-  padding-block: clamp(2rem, 6vw, 6rem);
+  padding-block: var(--_section-padding-block, clamp(2rem, 6vw, 6rem));
 
   @include flow(clamp(2rem, 8vw, 3rem));
+}
+
+.hero {
+  --_section-padding-block: clamp(2rem, 4vw, 3rem);
 }
 
 .x-center {
