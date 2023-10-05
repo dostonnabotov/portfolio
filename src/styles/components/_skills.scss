@@ -1,0 +1,53 @@
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 3vw, 1.5rem);
+}
+
+.skill {
+  --_tooltip-gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 3vw, 1.5rem);
+
+  border-radius: 0.75rem;
+  background: var(--clr-secondary);
+  position: relative;
+
+  // tooltip text
+  &::before {
+    content: attr(data-skill);
+    position: absolute;
+    bottom: calc(100% + var(--_tooltip-gap));
+    display: inline-flex;
+    width: max-content;
+    padding: 0.5em 1.5em;
+    background-color: var(--clr-secondary);
+    border-radius: 0.25rem;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  // tooltip arrow
+  &::after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + var(--_tooltip-gap));
+    transform: translateX(-50%) translateY(100%);
+    border-width: 0.75rem;
+    border-style: solid;
+    border-color: var(--clr-secondary) transparent transparent transparent;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  &:is(:hover, :focus-visible)::before,
+  &:is(:hover, :focus-visible)::after {
+    opacity: 1;
+    z-index: 5;
+  }
+}

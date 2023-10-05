@@ -1,19 +1,21 @@
 ---
-import type { ProjectProps } from "../types";
+import type { ProjectProps, SkillProps } from "../types";
 
-import { fetchProjects } from "../data";
+import { fetchProjects, fetchSkills } from "../data";
 
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Project from "../components/Project.astro";
 import Button from "../components/Button.astro";
 import Social from "../components/Social.astro";
+import Skill from "../components/Skill.astro";
 
 const projects = fetchProjects(4);
+const skills = fetchSkills();
 ---
 
 <BaseLayout title="Doston Nabotov">
   <main class="container">
-    <section class="hero section flow" data-flow-space="lg">
+    <section class="section section--hero flow" data-flow-space="lg">
       <h1 class="site-title">
         <span>Hello, I'm</span>
         <br />
@@ -83,6 +85,13 @@ const projects = fetchProjects(4);
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="skills" class="section section--skills">
+      <ul role="list" class="skills">
+        <h2 class="sr-only">Technical skills</h2>
+        {skills.map((skill: SkillProps) => <Skill {...skill} />)}
+      </ul>
     </section>
 
     <section id="projects" class="section">

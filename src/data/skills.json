@@ -1,0 +1,42 @@
+[
+  {
+    "name": "HTML",
+    "icon": "/images/skills/html.svg"
+  },
+  {
+    "name": "CSS",
+    "icon": "/images/skills/css.svg"
+  },
+  {
+    "name": "SCSS",
+    "icon": "/images/skills/scss.svg"
+  },
+  {
+    "name": "Tailwind CSS",
+    "icon": "/images/skills/tailwindcss.svg"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "/images/skills/javascript.svg"
+  },
+  {
+    "name": "TypeScript",
+    "icon": "/images/skills/typescript.svg"
+  },
+  {
+    "name": "React",
+    "icon": "/images/skills/react.svg"
+  },
+  {
+    "name": "NextJS",
+    "icon": "/images/skills/nextjs.svg"
+  },
+  {
+    "name": "Astro",
+    "icon": "/images/skills/astro.svg"
+  },
+  {
+    "name": "Figma",
+    "icon": "/images/skills/figma.svg"
+  }
+]

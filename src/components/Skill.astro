@@ -1,0 +1,7 @@
+---
+const { name, icon } = Astro.props;
+---
+
+<li class="skill" data-skill={name} tabindex="0">
+  <img src={icon} alt={name} />
+</li>

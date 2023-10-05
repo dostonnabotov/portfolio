@@ -1,0 +1,10 @@
+<svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="devicon:nextjs" clip-path="url(#clip0_82_804)">
+<path id="Vector" d="M20 0.549805C8.96875 0.549805 0 9.51855 0 20.5498C0 31.5811 8.96875 40.5498 20 40.5498C23.5 40.5498 26.7813 39.6436 29.625 38.0811L15.125 17.8311V29.2686H13V13.6123H15.125L30.9063 37.2998C36.375 33.7373 40 27.5811 40 20.5498C40 9.51855 31.0312 0.549805 20 0.549805ZM26.9062 26.9873L24.5625 23.4561V13.6123H26.9062V26.9873Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_82_804">
+<rect width="40" height="40" fill="white" transform="translate(0 0.549805)"/>
+</clipPath>
+</defs>
+</svg>
