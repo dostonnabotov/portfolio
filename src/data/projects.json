@@ -1,5 +1,11 @@
 [
   {
+    "title": "EduAI",
+    "image": "/images/projects/eduai.jpg",
+    "github_url": "https://github.com/mbidnyj/baltic-ai-hackathon",
+    "site_url": "https://www.youtube.com/watch?v=AqbpaQzHCRk"
+  },
+  {
     "title": "Personal portfolio",
     "image": "/images/projects/portfolio.jpg",
     "github_url": "https://github.com/dostonnabotov/portfolio",
