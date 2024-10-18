@@ -6,7 +6,7 @@
     "site_url": "https://www.youtube.com/watch?v=AqbpaQzHCRk"
   },
   {
-    "title": "Personal portfolio",
+    "title": "Personal Portfolio",
     "image": "/images/projects/portfolio.jpg",
     "github_url": "https://github.com/dostonnabotov/portfolio",
     "site_url": "https://dostonnabotov.netlify.app/"
@@ -18,19 +18,19 @@
     "site_url": "https://easybank-nextgen.netlify.app/"
   },
   {
-    "title": "Fylo landing page",
+    "title": "Fylo Landing Page",
     "image": "/images/projects/fylo-dark-theme-landing-page.jpg",
     "github_url": "https://github.com/dostonnabotov/fem_fylo-dark-theme-landing-page",
     "site_url": "https://technophile-fylo-dark-landing-page.netlify.app/"
   },
   {
-    "title": "News homepage",
+    "title": "News Homepage",
     "image": "/images/projects/news-homepage.jpg",
     "github_url": "https://github.com/dostonnabotov/fem_news-homepage",
     "site_url": "https://technophile-news-homepage.netlify.app/"
   },
   {
-    "title": "Art gallery website",
+    "title": "Art Gallery Website",
     "image": "/images/projects/art-gallery-website.jpg",
     "github_url": "https://github.com/dostonnabotov/fem_art-gallery-website",
     "site_url": "https://technophile-art-gallery-website.netlify.app/"
