@@ -1,6 +1,6 @@
 [
   {
-    "title": "EduAI",
+    "title": "EduAI Online Platform",
     "image": "/images/projects/eduai.jpg",
     "github_url": "https://github.com/mbidnyj/baltic-ai-hackathon",
     "site_url": "https://www.youtube.com/watch?v=AqbpaQzHCRk"
@@ -12,22 +12,22 @@
     "site_url": "https://dostonnabotov.netlify.app/"
   },
   {
-    "title": "EasyBank landing page",
-    "image": "/images/projects/easybank-landing-page.jpg",
-    "github_url": "https://github.com/dostonnabotov/fem_easybank-landing-page",
-    "site_url": "https://tech-easybank-landing-page.netlify.app/"
+    "title": "EasyBank - Next Gen",
+    "image": "/images/projects/easybank-nextgen.jpg",
+    "github_url": "https://github.com/dostonnabotov/easybank-next-gen",
+    "site_url": "https://easybank-nextgen.netlify.app/"
+  },
+  {
+    "title": "Fylo landing page",
+    "image": "/images/projects/fylo-dark-theme-landing-page.jpg",
+    "github_url": "https://github.com/dostonnabotov/fem_fylo-dark-theme-landing-page",
+    "site_url": "https://technophile-fylo-dark-landing-page.netlify.app/"
   },
   {
     "title": "News homepage",
     "image": "/images/projects/news-homepage.jpg",
     "github_url": "https://github.com/dostonnabotov/fem_news-homepage",
     "site_url": "https://technophile-news-homepage.netlify.app/"
-  },
-  {
-    "title": "Fylo dark theme landing page",
-    "image": "/images/projects/fylo-dark-theme-landing-page.jpg",
-    "github_url": "https://github.com/dostonnabotov/fem_fylo-dark-theme-landing-page",
-    "site_url": "https://technophile-fylo-dark-landing-page.netlify.app/"
   },
   {
     "title": "Art gallery website",
