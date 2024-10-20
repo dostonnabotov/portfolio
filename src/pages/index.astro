@@ -14,7 +14,8 @@ const skills = fetchSkills();
 ---
 
 <BaseLayout title="Doston Nabotov">
-  <main class="container">
+  <main class="blob-container">
+    <div class="container">
     <section class="section section--hero flow" data-flow-space="lg">
       <h1 class="site-title">
         <span>Hello, I'm</span>
@@ -47,6 +48,24 @@ const skills = fetchSkills();
         </Button>
       </div>
       <Social />
+      <svg class="blob" width="803" height="727" viewBox="0 0 803 727" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_f_129_26)">
+        <path d="M622.2 224.26C558.2 190.86 387.9 144.1 218.7 224.26L180 410.56L391.2 546.76L599.7 474.46L622.2 224.26Z" fill="url(#paint0_linear_129_26)"/>
+        </g>
+        <defs>
+        <filter id="filter0_f_129_26" x="0" y="0" width="802.2" height="726.76" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feGaussianBlur stdDeviation="90" result="effect1_foregroundBlur_129_26"/>
+        </filter>
+        <linearGradient id="paint0_linear_129_26" x1="401.1" y1="180" x2="401.1" y2="546.76" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#0F3DC7"/>
+        <stop offset="1" stop-color="#EB5D2D"/>
+        </linearGradient>
+        </defs>
+        </svg>
+        
+        
     </section>
 
     <section id="about" class="section">
@@ -186,5 +205,6 @@ const skills = fetchSkills();
         Get in Touch
       </Button>
     </section>
+  </div>
   </main>
 </BaseLayout>

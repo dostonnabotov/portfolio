@@ -1,3 +1,4 @@
+// NAVIGATION FOR MOBILE
 const navToggleBtn = document.getElementById("mobile-nav-toggle");
 const navElement = document.getElementById("primary-nav");
 
@@ -14,3 +15,5 @@ navToggleBtn.addEventListener("click", () => {
     // document.body.style.overflowY = "visible";
   }
 });
+
+// TODO: BLOB SCROLL-BASED ANIMATION

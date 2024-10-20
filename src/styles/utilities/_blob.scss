@@ -1,0 +1,22 @@
+.blob-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.blob {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  animation: spin 10s linear infinite;
+  z-index: -1;
+}
+
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
