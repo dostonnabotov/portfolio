@@ -1,9 +1,9 @@
 [
   {
-    "title": "EduAI Online Platform",
-    "image": "/images/projects/eduai.jpg",
-    "github_url": "https://github.com/mbidnyj/baltic-ai-hackathon",
-    "site_url": "https://www.youtube.com/watch?v=AqbpaQzHCRk"
+    "title": "Weather Scout",
+    "image": "/images/projects/weather-scout.jpg",
+    "github_url": "https://github.com/dostonnabotov/weather-scout",
+    "site_url": "https://t.me/WeatherScoutBot"
   },
   {
     "title": "Personal Portfolio",
@@ -22,6 +22,12 @@
     "image": "/images/projects/fylo-dark-theme-landing-page.jpg",
     "github_url": "https://github.com/dostonnabotov/fem_fylo-dark-theme-landing-page",
     "site_url": "https://technophile-fylo-dark-landing-page.netlify.app/"
+  },
+  {
+    "title": "EduAI Online Platform",
+    "image": "/images/projects/eduai.jpg",
+    "github_url": "https://github.com/mbidnyj/baltic-ai-hackathon",
+    "site_url": "https://www.youtube.com/watch?v=AqbpaQzHCRk"
   },
   {
     "title": "News Homepage",
