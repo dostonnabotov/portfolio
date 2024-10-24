@@ -38,5 +38,9 @@
   {
     "name": "Figma",
     "icon": "/images/skills/figma.svg"
+  },
+  {
+    "name": "Linux",
+    "icon": "/images/skills/linux.svg"
   }
 ]

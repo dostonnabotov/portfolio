@@ -8,7 +8,8 @@ const { title, image, github_url, site_url, tags } = Astro.props as ProjectProps
 <li>
   <div class="project">
     <div class="project__img-wrapper">
-      <img class="project__img" src={image} alt="Preview" />
+      <img class="project__img" src={image} alt={`${title} preview`}  decoding="async"
+      loading="lazy" />
       <div class="project__meta">
         <Button
           renderAs="link"
