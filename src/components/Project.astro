@@ -2,9 +2,7 @@
 import type { ProjectProps } from "../types";
 import Button from "./Button.astro";
 
-interface Props extends ProjectProps {}
-
-const { title, image, github_url, site_url } = Astro.props;
+const { title, image, github_url, site_url, tags } = Astro.props as ProjectProps;
 ---
 
 <li>
@@ -36,6 +34,11 @@ const { title, image, github_url, site_url } = Astro.props;
     </div>
     <div>
       <h3 class="project__title">{title}</h3>
+      <ul class="project__tags" role="list">
+        {tags.map((tag) => (
+          <li class="project__tag">{tag}</li>
+        ))}
+      </ul>
     </div>
   </div>
 </li>

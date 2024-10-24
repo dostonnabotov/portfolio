@@ -1,5 +1,7 @@
 ---
-const { name, icon } = Astro.props;
+import type { SkillProps } from "../types";
+
+const { name, icon } = Astro.props as SkillProps;
 ---
 
 <li class="skill" data-skill={name} tabindex="0">

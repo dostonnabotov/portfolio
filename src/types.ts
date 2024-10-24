@@ -11,6 +11,7 @@ export interface ProjectProps {
   image: string;
   github_url: string;
   site_url: string;
+  tags: string[];
 }
 
 export interface SkillProps {

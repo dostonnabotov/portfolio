@@ -1,7 +1,9 @@
 $-ff-inter: "Inter", sans-serif;
+$-ff-mono-default: "Courier New", Courier, monospace;
 
 $font-families: (
   "primary": $-ff-inter,
+  "monospace": $-ff-mono-default,
 );
 
 /// @see https://utopia.fyi/type/calculator - 16px -> 18px

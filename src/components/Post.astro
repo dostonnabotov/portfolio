@@ -3,7 +3,5 @@ import type { PostProps } from "../types";
 
 // import FormattedDate from "../utils/FormattedDate.astro";
 
-interface Props extends PostProps {}
-
-const { title, url, cover_image, created_at, edited_at } = Astro.props;
+const { title, url, cover_image, created_at, edited_at } = Astro.props as PostProps;
 --- -->
