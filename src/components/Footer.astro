@@ -2,6 +2,8 @@
 import BrandLogo from "./BrandLogo.astro";
 import Social from "./Social.astro";
 import { navLinks } from "./Navigation.astro";
+
+const year = new Date().getFullYear();
 ---
 
 <footer class="footer">
@@ -25,7 +27,9 @@ import { navLinks } from "./Navigation.astro";
     <hr />
 
     <div class="footer__copyright">
-      <p class="copyright">© Copyright 2023 - Doston Nabotov</p>
+      <p class="copyright">
+        © Copyright {year} - Doston Nabotov
+      </p>
 
       <Social />
     </div>
