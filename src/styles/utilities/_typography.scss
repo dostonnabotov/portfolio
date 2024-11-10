@@ -11,7 +11,7 @@
   font-weight: var(--fw-black);
   line-height: 1.1;
 
-  & span {
+  & .subtitle {
     font-size: clamp(1.5rem, 3vw, 2.25rem);
     font-weight: 700;
     letter-spacing: 0.1125rem;
@@ -80,4 +80,13 @@
   -webkit-text-fill-color: transparent;
   width: fit-content;
   text-decoration: none;
+}
+
+.email-link {
+  filter: blur(10px);
+  transition: filter 300ms ease;
+
+  &:hover {
+    filter: blur(0);
+  }
 }
