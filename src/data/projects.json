@@ -36,8 +36,8 @@
   },
   {
     "title": "Fylo Landing Page",
-    "image": "/images/projects/fylo-dark-theme-landing-page.jpg",
-    "github_url": "https://github.com/dostonnabotov/fem_fylo-landing-page",
+    "image": "/images/projects/fylo-landing-page.jpg",
+    "github_url": "https://github.com/dostonnabotov/fem_fylo-dark-theme-landing-page",
     "site_url": "https://technophile-fylo-dark-landing-page.netlify.app/",
     "tags": ["react", "typescript"]
   },
