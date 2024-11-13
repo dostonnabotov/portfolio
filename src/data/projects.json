@@ -21,6 +21,13 @@
     "tags": ["astro", "scss"]
   },
   {
+    "title": "Direct Measurements Calculator",
+    "image": "/images/projects/direct-measurements-calculator.jpg",
+    "github_url": "https://github.com/dostonnabotov/direct-measurements-calculator",
+    "site_url": "https://direct-measurements-calculator.netlify.app",
+    "tags": ["javascript", "bootstrap", "mathjax"]
+  },
+  {
     "title": "EduAI Online Platform",
     "image": "/images/projects/eduai.jpg",
     "github_url": "https://github.com/mbidnyj/baltic-ai-hackathon",
@@ -30,7 +37,7 @@
   {
     "title": "Fylo Landing Page",
     "image": "/images/projects/fylo-dark-theme-landing-page.jpg",
-    "github_url": "https://github.com/dostonnabotov/fem_fylo-dark-theme-landing-page",
+    "github_url": "https://github.com/dostonnabotov/fem_fylo-landing-page",
     "site_url": "https://technophile-fylo-dark-landing-page.netlify.app/",
     "tags": ["react", "typescript"]
   },
