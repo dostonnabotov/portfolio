@@ -1,5 +1,19 @@
 [
   {
+    "title": "TaskShell",
+    "image": "/images/projects/taskshell.jpg",
+    "github_url": "https://github.com/dostonnabotov/taskshell",
+    "site_url": "https://taskshell.netlify.app",
+    "tags": ["react", "typescript"]
+  },
+  {
+    "title": "EasyBank",
+    "image": "/images/projects/easybank-nextgen.jpg",
+    "github_url": "https://github.com/dostonnabotov/easybank-next-gen",
+    "site_url": "https://easybank-nextgen.netlify.app",
+    "tags": ["astro", "scss"]
+  },
+  {
     "title": "Weather Scout",
     "image": "/images/projects/weather-scout.jpg",
     "github_url": "https://github.com/dostonnabotov/weather-scout",
@@ -12,13 +26,6 @@
     "github_url": "https://github.com/dostonnabotov/portfolio",
     "site_url": "https://dostonnabotov.netlify.app/",
     "tags": ["astro", "typescript", "scss", "figma"]
-  },
-  {
-    "title": "EasyBank",
-    "image": "/images/projects/easybank-nextgen.jpg",
-    "github_url": "https://github.com/dostonnabotov/easybank-next-gen",
-    "site_url": "https://easybank-nextgen.netlify.app/",
-    "tags": ["astro", "scss"]
   },
   {
     "title": "Direct Measurements Calculator",
