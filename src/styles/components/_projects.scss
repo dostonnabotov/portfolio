@@ -27,7 +27,7 @@
 
 .project__img-wrapper {
   width: 100%;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 16 / 9;
   border-radius: 0.4em;
   overflow: hidden;
   position: relative;
@@ -49,6 +49,19 @@
   &:is(:hover, :focus-within) .project__img {
     scale: 1.05;
   }
+}
+
+// a little badge for latest projects
+.projects > li:nth-of-type(1) .project__img-wrapper::after {
+  content: "✨ NEW";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: var(--fs-500);
+  font-weight: var(--fw-bold);
+  background: var(--clr-secondary);
+  padding: 0.2em 0.5em;
+  border-radius: 0.25em;
 }
 
 .project__img {

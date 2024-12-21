@@ -1,10 +1,24 @@
 [
   {
+    "title": "QuickSnip",
+    "image": "/images/projects/quicksnip.jpg",
+    "github_url": "https://github.com/dostonnabotov/quicksnip",
+    "site_url": "https://quicksnip.netlify.app",
+    "tags": ["react", "typescript", "figma"]
+  },
+  {
+    "title": "Sass Template",
+    "image": "/images/projects/sass-template.jpg",
+    "github_url": "https://github.com/dostonnabotov/sass-template",
+    "site_url": "https://dostonnabotov.github.io/sass-template/",
+    "tags": ["scss", "template", "youtube"]
+  },
+  {
     "title": "TaskShell",
     "image": "/images/projects/taskshell.jpg",
     "github_url": "https://github.com/dostonnabotov/taskshell",
     "site_url": "https://taskshell.netlify.app",
-    "tags": ["react", "typescript"]
+    "tags": ["react", "redux", "typescript"]
   },
   {
     "title": "EasyBank",
@@ -35,25 +49,11 @@
     "tags": ["javascript", "bootstrap", "mathjax"]
   },
   {
-    "title": "EduAI Online Platform",
-    "image": "/images/projects/eduai.jpg",
-    "github_url": "https://github.com/mbidnyj/baltic-ai-hackathon",
-    "site_url": "https://www.youtube.com/watch?v=AqbpaQzHCRk",
-    "tags": ["ai", "figma", "react"]
-  },
-  {
     "title": "Fylo Landing Page",
     "image": "/images/projects/fylo-landing-page.jpg",
     "github_url": "https://github.com/dostonnabotov/fem_fylo-dark-theme-landing-page",
     "site_url": "https://technophile-fylo-dark-landing-page.netlify.app/",
     "tags": ["react", "typescript"]
-  },
-  {
-    "title": "News Homepage",
-    "image": "/images/projects/news-homepage.jpg",
-    "github_url": "https://github.com/dostonnabotov/fem_news-homepage",
-    "site_url": "https://technophile-news-homepage.netlify.app/",
-    "tags": ["css", "typography"]
   },
   {
     "title": "Art Gallery Website",
